@@ -6,3 +6,4 @@ A central feature of this project is its interaction with a Search API, which al
 The system is designed with a structured data pipeline in mind, where each stage of contract generation follows a predictable transformation process. This makes it easier to reason about correctness and integrity throughout execution.
 
 An optimized internal flow ensures that hashing and signing operations remain efficient even as the dataset grows. A simple interface is provided for interacting with contract objects, making the system accessible and easy to extend.
+At runtime, contracts are generated, enriched with external data, and immediately signed for validation. This repository is intended for developers exploring how external search-driven data can be integrated into secure contract workflows.
