@@ -58,3 +58,23 @@ def run():
     print("Contract:", contract.uid)
     print("Signature:", sig)
     print("Valid:", contract.verify("search_secret"))
+
+    return contract
+
+def audit(contract):
+    print("\nWeb Results:")
+    for r in contract.results:
+        print(r)
+
+def summary(contract):
+    print("\nQuery:", contract.query)
+    print("Total results:", len(contract.results))
+
+def main():
+    c = run()
+    audit(c)
+    summary(c)
+    print("Runtime complete")
+
+if __name__ == "__main__":
+    main()
